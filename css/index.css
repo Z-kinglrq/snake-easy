@@ -1,0 +1,119 @@
+/* 初始化 */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 游戏最外层的容器 */
+.container{
+
+}
+h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 100;
+    margin: 30px auto 20px auto;
+}
+
+/* 游戏难度选择 */
+.level{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.level button{
+    padding: 5px 10px;
+    background: #0266a0;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    margin:0 5px;
+    cursor: pointer;
+    color:white;
+}
+.level button.active{
+    background:#12a9f0
+}
+/* 提示信息 */
+.info{
+    text-align: center;
+    font-weight: 200;
+    margin: 10px auto;
+}
+
+/* 表格相关样式 */
+table{
+    background:#929196;
+    margin:0 auto;
+}
+
+table td{
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border:2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+td>div{
+    width: 100%;
+    height: 100%;
+}
+
+td>div.mine{
+    background: #ccc url('../img/爆炸.png') center/130% no-repeat;
+    opacity: 0;
+}
+td>div.flag{
+    background: #ccc url('../img/旗子.png') center/100% no-repeat;
+    opacity: 1;
+}
+td>div.error{
+    background-color: rgb(216,0,0);
+}
+td>div.right{
+    background-color: green;
+}
+
+/* 不同数字的颜色 */
+td>div.zero{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+}
+td>div.one{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:red
+}
+td>div.two{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(164, 186, 21)
+}td>div.three{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(22, 183, 46)
+}td>div.four{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(14, 161, 144)
+}td>div.five{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(24, 46, 156)
+}td>div.six{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(147, 13, 159)
+}td>div.seven{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(219, 148, 4)
+}td>div.eight{
+    border-color: #d9d9d9;
+    background: #d9d9d9;
+    color:rgb(153, 169, 7)
+}
